@@ -1,0 +1,32 @@
+header{
+    background-color: rgb(255, 241, 249);
+    padding: 20px 0;
+}
+ul{
+    /*横条消除*/
+    list-style: none;
+    /*li并列*/
+    display: flex;
+    /*间隙*/
+    gap: 0 10px;
+    /*中间*/
+    justify-content: end;
+}
+.last{
+    margin-right: 30px;
+}
+
+.blog-contens{
+    display: flex;
+    width: 90%;
+    gap: 0 20px;
+    justify-content: center;
+    margin: 0 auto;
+}
+.blog{
+    width: 30%;}
+
+
+img{
+    width: 100%;
+}

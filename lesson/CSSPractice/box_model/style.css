@@ -1,0 +1,18 @@
+p{
+    width: 80%;
+    background-color: aliceblue;
+    padding: 30px 100px 30px 5px;
+    border-style: dashed solid;
+    border-width: 5px;
+    border-color: crimson blue yellow green;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+h1{
+    width: 80%;
+    background-color: aliceblue;
+    border-top: 5px solid crimson;
+    border-bottom: 5px solid crimson;
+    padding-top: 30px;
+    margin: 100px;
+}

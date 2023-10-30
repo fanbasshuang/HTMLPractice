@@ -1,0 +1,18 @@
+*{font-size: 20px;}
+
+#li-color{color: #f01468;}
+
+.text-color{
+    color: #2f0e92;
+    font-size: 20px;}
+
+/*id指定颜色红色*/
+#contents{
+    color: #f01468;
+    }
+/*class指定颜色blue*/
+.section{
+    color: #2f0e92;}
+/*要素div指定绿色*/ 
+div{
+    color: #008000;}   
