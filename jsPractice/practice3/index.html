@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label id="text-result">値：0</label>
+    </div>
+    <div>
+        <button id="change-text1">リセット</button>
+        <button id="change-text2">1を加算</button>
+        <button id="change-text3">1を減算</button>
+    </div>
+
+    <script>
+        // 确保文档加载后再执行脚本
+        document.addEventListener("DOMContentLoaded", function() {
+            // 获取标签和按钮元素
+            var label = document.getElementById("text-result");
+            var resetButton = document.getElementById("change-text1");
+            var addButton = document.getElementById("change-text2");
+            var subtractButton = document.getElementById("change-text3");
+
+            // 初始值
+            var value = 0;
+
+            // 点击“リセット”按钮，将值重置为0
+            resetButton.addEventListener("click", function() {
+                value = 0;
+                label.textContent = "値：" + value;
+            });
+
+            // 点击“1を加算”按钮，将值加1
+            addButton.addEventListener("click", function() {
+                value += 1;
+                label.textContent = "値：" + value;
+            });
+
+            // 点击“1を減算”按钮，将值减1，但要确保值不小于0
+            subtractButton.addEventListener("click", function() {
+                if (value > 0) {
+                    value -= 1;
+                    label.textContent = "値：" + value;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
