@@ -1,32 +1,42 @@
+body{
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+/*ヘッダー部分*/
 header{
-    background-color: rgb(255, 241, 249);
-    padding: 20px 0;
+    background-color: #fff5ee;
+    padding: 30px 0;
+    font-size: 20px;
 }
+/*メニュー横並び*/
 ul{
-    /*横条消除*/
-    list-style: none;
-    /*li并列*/
     display: flex;
-    /*间隙*/
-    gap: 0 10px;
-    /*中间*/
-    justify-content: end;
-}
-.last{
-    margin-right: 30px;
-}
-
-.blog-contens{
-    display: flex;
-    width: 90%;
-    gap: 0 20px;
+    gap: 0 30px;
     justify-content: center;
-    margin: 0 auto;
 }
-.blog{
-    width: 30%;}
+/*ヘッダー部分 リンクにカーソルを合わせたら赤色にする*/
+a:hover{
+    color: red;
+}
 
+h1{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 25px;
+}
 
+/*記事一覧の対応*/
+.blog-contents{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 0 16px;
+}
+/*記事の大きさの設定*/
+.blog-article{
+    width: 30%;
+}
+/*画像の大きさの設定*/
 img{
     width: 100%;
 }
